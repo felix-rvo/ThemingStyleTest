@@ -23,7 +23,7 @@ public protocol Theme {
 }
 
 public struct DarkModeTheme: Theme {
-    public var backgroundColor: UIColor { .black }
+    public var backgroundColor: UIColor { .purple }
     public var textColor: UIColor { .lightGray }
     public var buttonBackgroundColor: UIColor { .gray }
     public var buttonTextColor: UIColor { .white }
