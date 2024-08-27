@@ -36,6 +36,38 @@ public protocol Theme {
     var paragraphSize: CGSize { get }
 }
 
+public struct DarkModeTheme: Theme {
+    public var backgroundColor: UIColor { .purple }
+    public var textColor: UIColor { .lightGray }
+    public var buttonBackgroundColor: UIColor { .gray }
+    public var buttonTextColor: UIColor { .white }
+    public var font: UIFont { .systemFont(ofSize: 18, weight: .regular) }
+    public var buttonFont: UIFont { .systemFont(ofSize: 16, weight: .medium) }
+    public var titleFont: UIFont { .systemFont(ofSize: 24, weight: .bold) }
+    public var paragraphFont: UIFont { .systemFont(ofSize: 16, weight: .regular) }
+    public var buttonSize: CGSize { CGSize(width: 120, height: 44) }
+    public var titleSize: CGSize { CGSize(width: 200, height: 50) }
+    public var paragraphSize: CGSize { CGSize(width: 300, height: 200) }
+    
+    public init() {}
+}
+
+public struct LightModeTheme: Theme {
+    public var backgroundColor: UIColor { .white }
+    public var textColor: UIColor { .darkGray }
+    public var buttonBackgroundColor: UIColor { .lightGray }
+    public var buttonTextColor: UIColor { .black }
+    public var font: UIFont { .systemFont(ofSize: 18, weight: .regular) }
+    public var buttonFont: UIFont { .systemFont(ofSize: 16, weight: .medium) }
+    public var titleFont: UIFont { .systemFont(ofSize: 24, weight: .bold) }
+    public var paragraphFont: UIFont { .systemFont(ofSize: 16, weight: .regular) }
+    public var buttonSize: CGSize { CGSize(width: 120, height: 44) }
+    public var titleSize: CGSize { CGSize(width: 200, height: 50) }
+    public var paragraphSize: CGSize { CGSize(width: 300, height: 200) }
+    
+    public init() {}
+}
+
 public struct FacebookTheme: Theme {
     public var backgroundColor: UIColor { .systemBlue }
     public var textColor: UIColor { .white }
