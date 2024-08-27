@@ -12,7 +12,7 @@ public class ThemeManager {
     public static let shared = ThemeManager()
     public static let themeDidChangeNotification = Notification.Name("ThemeDidChangeNotification")
     
-    private var currentTheme: Theme = LightModeTheme() {
+    private var currentTheme: Theme = FacebookTheme() {
         didSet {
             NotificationCenter.default.post(name: ThemeManager.themeDidChangeNotification, object: nil)
         }
